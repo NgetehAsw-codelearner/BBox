@@ -1,0 +1,49 @@
+# Blackbox Directory (bbox/)
+
+This directory contains files and documentation related to Blackbox AI tasks and operations for the SIPNOTUL project.
+
+## Purpose
+
+The `bbox/` directory serves as a dedicated space for:
+- Task documentation and progress tracking
+- Blackbox-specific configuration files
+- Temporary files generated during AI-assisted development
+- Task-related notes and instructions
+- Development artifacts from Blackbox interactions
+
+## Structure
+
+```
+bbox/
+├── readme.bbox          # This file - directory documentation
+├── tasks/              # Task-specific documentation (if needed)
+├── config/             # Blackbox configuration files (if needed)
+└── temp/               # Temporary files (if needed)
+```
+
+## Usage Guidelines
+
+1. **Task Documentation**: Store task-related files and progress updates here
+2. **Configuration**: Keep Blackbox-specific settings in the config/ subdirectory
+3. **Temporary Files**: Use temp/ for files that may be cleaned up later
+4. **Organization**: Maintain clear naming conventions for easy identification
+
+## Current Tasks
+
+### SIPNOTUL Web Application Development
+- **Status**: Completed major fixes and improvements
+- **Location**: Main project files in root directory
+- **Documentation**: See TODO.md in root for task progress
+
+### Key Improvements Made
+- ✅ Fixed authentication and user identity awareness
+- ✅ Integrated account management functionality
+- ✅ Added proper notes ownership and management
+- ✅ Enhanced viewer with author information
+- ✅ Fixed broken buttons and missing functions
+
+## Notes
+
+This directory is specifically for Blackbox AI operations and should not contain core application code. Core application files belong in the main project structure (src/, *.html, etc.).
+
+For questions about this directory structure or Blackbox operations, refer to this readme or create additional documentation files as needed.
