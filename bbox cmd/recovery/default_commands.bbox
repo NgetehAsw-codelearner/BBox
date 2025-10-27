@@ -1,0 +1,25 @@
+# Default Blackbox Commands (Recovery)
+
+Format: [cmd id][cmd][cmd purpose]
+
+## Permanent Commands (cannot be edited or deleted)
+
+1. bbox update | -bmd bbox update | Update the bbox folder
+2. bbox create | -bmd bbox create | Create the bbox folder for the current project
+3. build create | -bmd build create [version] | Create a build folder and zip the project (default version 1.0.0)
+4. build update | -bmd build update [version] | Update the build (default to newest version)
+5. cmd list | -bmd cmd list | View all available commands
+6. cmd cc | -bmd cmd cc [cmd][cmd purpose] | Create a new command
+7. cmd cc p | -bmd cmd cc [cmd][cmd purpose] ~p p | Create a new permanent command
+8. cmd ccp | -bmd cmd ccp [cmd id] p | Set command to permanent
+9. cmd ccp np | -bmd cmd ccp [cmd id] np | Set command to non-permanent
+10. cmd cr | -bmd cmd cr [cmd id] | Delete a command
+11. fix recover | -bmd fix recover | Fix bbox command by rewriting to defaults
+12. fix | -bmd fix | Try fixing errors in bbox cmd
+13. proj fix problem | -bmd proj fix problem | Fix errors shown in problems
+14. proj fix | -bmd proj fix | Fix undetected errors or unmatched parts
+15. proj fix lint | -bmd proj fix lint | Fix code linting to community standards
+16. proj undo | -bmd proj undo | Undo to previous state before latest edit
+17. proj debug | -bmd proj debug | Debug the project
+18. proj debug localhost | -bmd proj debug localhost | Debug from localhost for certain code types
+19. build load | -bmd build load [version] | Load a specific build version

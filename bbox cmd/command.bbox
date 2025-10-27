@@ -1,0 +1,27 @@
+# Blackbox Commands
+
+Format: [cmd id][cmd][cmd purpose][type]
+
+## Permanent commands type cannot be edited or deleted
+## build cmd note: Due to some reason, copying all files located at parent directory all at once is not possible. copy it one by one. 
+
+1. bbox update | -bmd bbox update | Update the bbox folder | permanent
+2. bbox create | -bmd bbox create | Create the bbox folder for the current project | permanent
+3. build create | -bmd build create [version] | Create a build folder and zip the project, save it as zip file (default version 1.0.0) | permanent
+4. build update | -bmd build update [version] | Update the build, save it as zip file (default to newest version) | permanent
+5. cmd list | -bmd cmd list | View all available commands | permanent
+6. cmd cc | -bmd cmd cc [cmd][cmd purpose] | Create a new command | permanent
+7. cmd cc p | -bmd cmd cc [cmd][cmd purpose] ~p p | Create a new permanent command | permanent
+8. cmd ccp | -bmd cmd ccp [cmd id] p | Set command to permanent | permanent
+9. cmd ccp np | -bmd cmd ccp [cmd id] np | Set command to non-permanent | permanent
+10. cmd cr | -bmd cmd cr [cmd id] | Delete a command | permanent
+11. fix recover | -bmd fix recover | Fix bbox command by rewriting to defaults | permanent
+12. fix | -bmd fix | Try fixing errors in bbox cmd | permanent
+13. proj fix problem | -bmd proj fix problem | Fix errors shown in problems | permanent
+14. proj fix | -bmd proj fix | Fix undetected errors or unmatched parts | permanent
+15. proj fix lint | -bmd proj fix lint | Fix code linting to community standards | permanent
+16. proj undo | -bmd proj undo | Undo to previous state before latest edit | permanent
+17. proj debug | -bmd proj debug | Debug the project | permanent
+18. proj debug localhost | -bmd proj debug localhost | Debug from localhost for certain code types | permanent
+19. build load | -bmd build load [version] | Load a specific build version | permanent
+20. bbox sa | -bmd bbox sa | save all latest action as progress | permanent

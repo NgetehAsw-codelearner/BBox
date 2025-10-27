@@ -1,0 +1,32 @@
+# Blackbox Command Directory (bbox cmd/)
+
+This directory contains shortcuts commands for Blackbox AI operations in the SIPNOTUL project.
+
+## Purpose
+
+The `bbox cmd/` directory serves as a dedicated space for:
+- Command shortcuts for Blackbox AI
+- Recovery files for default commands
+- Temporary project states for undo
+
+## Structure
+
+```
+bbox cmd/
+├── readme.bbox          # This file - directory documentation
+├── command.bbox         # Stores the command shortcuts
+├── recovery/            # Default commands for recovery
+└── proj/
+    └── temp/
+        └── undo/        # Undo states
+```
+
+## Usage Guidelines
+
+1. **Commands**: Stored in command.bbox with format [cmd id][cmd][cmd purpose]
+2. **Permanent Commands**: Crucial commands that cannot be edited or deleted
+3. **Recovery**: Use -bmd fix recover to restore defaults from recovery/
+
+## Current Commands
+
+See command.bbox for the list.
