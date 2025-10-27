@@ -3,7 +3,7 @@
 Format: [cmd id][cmd][cmd purpose][type]
 
 ## Permanent commands type cannot be edited or deleted
-## build cmd note: Due to some reason, copying all files located at parent directory all at once is not possible. copy it one by one. 
+## './bbox(example)' is the example of the bbox folder
 
 1. bbox update | -bmd bbox update | Update the bbox folder | permanent
 2. bbox create | -bmd bbox create | Create the bbox folder for the current project | permanent
@@ -25,3 +25,4 @@ Format: [cmd id][cmd][cmd purpose][type]
 18. proj debug localhost | -bmd proj debug localhost | Debug from localhost for certain code types | permanent
 19. build load | -bmd build load [version] | Load a specific build version | permanent
 20. bbox sa | -bmd bbox sa | save all latest action as progress | permanent
+
